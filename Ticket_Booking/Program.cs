@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Aireline_API
+namespace Ticket_Booking
 {
     public class Program
     {
@@ -19,7 +19,10 @@ namespace Aireline_API
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-            .ConfigureAppConfiguration(config=> { config.AddJsonFile("Database.json", optional: true, reloadOnChange: true); })
+            .ConfigureAppConfiguration(config => {
+                config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                config.AddJsonFile("Database.json", optional: true, reloadOnChange: true);
+            })
                 .UseStartup<Startup>();
     }
 }

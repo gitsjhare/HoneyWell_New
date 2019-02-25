@@ -1,26 +1,25 @@
 ﻿{
-  "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:49916",
+      "applicationUrl": "http://localhost:49980",
       "sslPort": 0
     }
   },
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": false,
-      //"launchUrl": "api/values",
+      "launchBrowser": true,
+      "launchUrl": "Home",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Aireline_API": {
+    "Ticket_Booking": {
       "commandName": "Project",
-      "launchBrowser": false,
-      //"launchUrl": "api/values",
+      "launchBrowser": true,
+      "launchUrl": "Home",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
